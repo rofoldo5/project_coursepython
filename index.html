@@ -4,20 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
-    <title>Gestion de Peliculas</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Prueba de formulario a EEUU</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <h1>Gestion de Peliculas</h1>
-    <form id="formulario-pelicula">
-        <input type="text" id="titulo" placeholder="Titulo" required>
-        <input type="text" id="director" placeholder="Director" required>
-        <input type="number" id="anio" placeholder="Año" required>
-        <input type="hidden" id="pelicula_id">
-        <button type="submit" id="bagreg">Agregar Pelicula</button>     
-    </form>
-    <h2>Lista de Peliculas</h2>
-    <ul id="lista-peliculas"></ul>
-    <script src="app.js"></script>
+<body class="cuerpo-pagina">
+
+    <input type="checkbox" id="modo-oscuro-toggle" class="modo-oscuro-toggle">
+
+    <div class="contenido-pagina">
+        <header class="encabezado-principal">
+            <h1>Prueba de Formulario Estados Unidos impone nuevas normas para viajeros: Precio del formulario I-94</h1>
+            <label for="modo-oscuro-toggle" class="modo-btn"></label>
+        </header>
+    
+        <p class="introduccion">
+            Recientemente, se ha dado a conocer la nueva ley fiscal, migratoria y presupuestaria que fue aprobada por el Congreso de los Estados Unidos y firmada por el presidente, Donald Trump: One Big Beautiful Bill. Este proyecto, aunque no ha entrado en funcionamiento, ya es de conocimiento público. Entre sus apuestas, destaca la imposición de una “tarifa de integridad”. Esta tiene un valor de 250 dólares, o sea 1 millón de pesos, y será aplicada a todos los países que requieran visa para entrar a Estados Unidos.
+            <br><br>
+            <span class="destacado">Visa para Estados Unidos: estas serán las condiciones para solicitar el reembolso de los 250 dólares adicionales que costará la solicitud</span>
+            <br><br>
+            Por otro lado, se cobrará a los viajeros una tarifa de 24 dólares, equivalentes a 96.000 mil pesos colombianos. Este monto corresponde al Formulario I-94 de Registro de Llegada/Salida. Colombia es uno de los países que debe solicitar visa para poder moverse legalmente en territorio americano. Si no sabía, actualmente los ciudadanos que hacen el proceso, pagan 185 dólares, es decir, 746.000 pesos colombianos.
+            <br><br>
+            Ahora, una prueba de estos formularios con sus nuevas reglas seria:
+        </p>
+    
+        <div class="contenedor-formulario">
+            <form action="" id="client-form" class="form-section">
+                <div class="campo-grupo">
+                    <label for="dni">DNI:</label>
+                    <input type="text" name="dni" id="dni">
+                </div>
+                <div class="campo-grupo">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" name="nombres" id="nombres">
+                </div>
+                <div class="campo-grupo">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos">
+                </div>
+                <div class="campo-grupo">
+                    <label>Genero:</label>
+                    <div class="opciones-genero">
+                        <input type="radio" name="genero" id="masculino"> <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="femenino"> <label for="femenino">Femenino</label>
+                    </div>
+                </div>
+                <div class="campo-grupo">
+                    <label for="nacimiento">Nacimiento:</label>
+                    <input type="date" name="nacimiento" id="nacimiento">
+                </div>
+                <div class="campo-grupo">
+                    <label>Hobbies:</label>
+                    <div class="opciones-hobbies">
+                        <input type="checkbox" name="hobbies" id="comer"><label for="comer">Comer</label>
+                        <input type="checkbox" name="hobbies" id="bailar"><label for="bailar">Bailar</label>
+                        <input type="checkbox" name="hobbies" id="dormir"><label for="dormir">Dormir</label>
+                    </div>
+                </div>
+                <div class="campo-grupo">
+                    <label for="fotografia">Fotografia:</label>
+                    <input type="file" name="fotografia" id="fotografia">
+                </div>
+                <div class="grupo-botones">
+                    <button type="submit" class="btn btn-enviar">ENVIAR</button>
+                    <button type="reset" class="btn btn-cancelar">CANCELAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/libreria.js"></script>
 </body>
 </html>
